@@ -46,3 +46,13 @@ change visibility, then verify public API/anonymous access and matching remote
 commits. publication-verification.json records observed final GitHub state and
 release hashes after verification. A GitHub rate-limit response is a pending
 external action, not a successful publication; requests are spaced/backed off.
+
+## Observed publication status
+
+Nine repositories are public and their detailed READMEs were verified without
+login. GitHub continues to reject creation of the clean trading replacement
+after spaced retries. The latest trading guide/source are retained in a private
+backup; superseded capture objects were not exposed publicly. Trading publication
+remains pending, not complete. No retry job is installed. The machine-readable
+status is publication-verification.json; the catalogue list links to the prepared
+trading guide until its source repository can be created.

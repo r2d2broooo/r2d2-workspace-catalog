@@ -1,6 +1,6 @@
 {
   "owner": "r2d2broooo",
-  "visibility": "public",
+  "visibility": "mixed",
   "created_date": "2026-11-05",
   "update_policy": "manual, on explicit operator request only",
   "repos": [
@@ -153,5 +153,13 @@
     "Wellness prototype",
     "Business website and artwork"
   ],
-  "public_release_date": "2026-11-05"
+  "public_release_date": "2026-11-05",
+  "target_visibility": "public",
+  "publication_status": {
+    "public_repositories": 9,
+    "pending": [
+      "r2d2-trading-system"
+    ],
+    "pending_reason": "GitHub temporarily blocks creation of the clean replacement; earlier trading backup remains private."
+  }
 }

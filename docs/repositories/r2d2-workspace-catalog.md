@@ -4,6 +4,13 @@ The starting point for the public R2D2 source repositories: what each one does, 
 
 See [REPOSITORIES.md](REPOSITORIES.md) for the complete linked list and [PUBLIC_RELEASE.md](PUBLIC_RELEASE.md) for release checks and visibility verification.
 
+## Current publication status
+
+Nine source repositories are public. The clean trading-source replacement is
+pending GitHub's temporary repository-creation block. Its detailed README is
+available in docs/repositories/; the earlier export is retained privately. No
+automatic retry or visibility change is scheduled. See publication-verification.json.
+
 ## Repository groups
 
 | Group | Role |

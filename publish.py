@@ -26,10 +26,12 @@ def publish(item, allow_public_update=False):
  changed=command(['git','diff','--cached','--name-only'],cwd=root,capture=True).stdout.strip()
  if changed:command(['git','commit','--quiet','-m','Codex: save verified source snapshot and documentation'],cwd=root)
  owner=CONFIG['owner'];full=owner+'/'+item['name']
- found=subprocess.run(['gh','repo','view',full,'--json','isPrivate'],text=True,capture_output=True)
+ found=subprocess.run(['gh','repo','view',full,'--json','isPrivate,nameWithOwner'],text=True,capture_output=True)
  if found.returncode:
   command(['gh','repo','create',full,'--private','--description',item['description'],
            '--source',str(root),'--remote','origin'])
+ elif json.loads(found.stdout).get('nameWithOwner','').lower()!=full.lower():
+  raise RuntimeError('Target name redirects to a private archive; create the clean target before publishing')
  elif not json.loads(found.stdout)['isPrivate'] and not allow_public_update:
   raise RuntimeError('Public target: explicit --allow-public-update is required; visibility is never changed by this command')
  else:

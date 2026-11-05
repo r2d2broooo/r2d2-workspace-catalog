@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-11-05T13:16:19.783049+00:00",
+  "repositories": [
+    {
+      "repo": "r2d2-trading-system",
+      "public": false,
+      "status": "pending-clean-repository-creation",
+      "description_prepared": true,
+      "privacy_review_passed": true
+    },
+    {
+      "repo": "r2d2-agent-workflow",
+      "public": true,
+      "url": "https://github.com/r2d2broooo/r2d2-agent-workflow",
+      "description_verified": true
+    },
+    {
+      "repo": "r2d2-browser-research-tools",
+      "public": true,
+      "url": "https://github.com/r2d2broooo/r2d2-browser-research-tools",
+      "description_verified": true
+    },
+    {
+      "repo": "r2d2-knowledge-tools",
+      "public": true,
+      "url": "https://github.com/r2d2broooo/r2d2-knowledge-tools",
+      "description_verified": true
+    },
+    {
+      "repo": "r2d2-agent-skills",
+      "public": true,
+      "url": "https://github.com/r2d2broooo/r2d2-agent-skills",
+      "description_verified": true
+    },
+    {
+      "repo": "r2d2-wifi-guard",
+      "public": true,
+      "url": "https://github.com/r2d2broooo/r2d2-wifi-guard",
+      "description_verified": true
+    },
+    {
+      "repo": "r2d2-linux-system-tools",
+      "public": true,
+      "url": "https://github.com/r2d2broooo/r2d2-linux-system-tools",
+      "description_verified": true
+    },
+    {
+      "repo": "r2d2-chart-indicator-research",
+      "public": true,
+      "url": "https://github.com/r2d2broooo/r2d2-chart-indicator-research",
+      "description_verified": true
+    },
+    {
+      "repo": "r2d2-productivity-connectors",
+      "public": true,
+      "url": "https://github.com/r2d2broooo/r2d2-productivity-connectors",
+      "description_verified": true
+    },
+    {
+      "repo": "r2d2-workspace-catalog",
+      "public": true,
+      "url": "https://github.com/r2d2broooo/r2d2-workspace-catalog",
+      "description_verified": true
+    }
+  ],
+  "automatic_retry_scheduled": false
+}
