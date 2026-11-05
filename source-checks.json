@@ -1,0 +1,47 @@
+{
+  "r2d2-trading-system": {
+    "exit": 0,
+    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 405, \"shell\": 2, \"javascript\": 9, \"json\": 3}}\n",
+    "stderr": ""
+  },
+  "r2d2-agent-workflow": {
+    "exit": 0,
+    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 27, \"shell\": 0, \"javascript\": 0, \"json\": 1}}\n",
+    "stderr": ""
+  },
+  "r2d2-browser-research-tools": {
+    "exit": 0,
+    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 9, \"shell\": 0, \"javascript\": 0, \"json\": 1}}\n",
+    "stderr": ""
+  },
+  "r2d2-knowledge-tools": {
+    "exit": 0,
+    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 4, \"shell\": 0, \"javascript\": 0, \"json\": 1}}\n",
+    "stderr": ""
+  },
+  "r2d2-agent-skills": {
+    "exit": 0,
+    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 10, \"shell\": 1, \"javascript\": 4, \"json\": 1}}\n",
+    "stderr": ""
+  },
+  "r2d2-wifi-guard": {
+    "exit": 0,
+    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 1, \"shell\": 1, \"javascript\": 0, \"json\": 1}}\n",
+    "stderr": ""
+  },
+  "r2d2-linux-system-tools": {
+    "exit": 0,
+    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 3, \"shell\": 5, \"javascript\": 0, \"json\": 1}}\n",
+    "stderr": ""
+  },
+  "r2d2-chart-indicator-research": {
+    "exit": 0,
+    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 1, \"shell\": 0, \"javascript\": 0, \"json\": 1}}\n",
+    "stderr": ""
+  },
+  "r2d2-productivity-connectors": {
+    "exit": 0,
+    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 4, \"shell\": 0, \"javascript\": 0, \"json\": 1}}\n",
+    "stderr": ""
+  }
+}

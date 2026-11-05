@@ -1,0 +1,156 @@
+{
+  "owner": "r2d2broooo",
+  "visibility": "private",
+  "created_date": "2026-11-05",
+  "update_policy": "manual, on explicit operator request only",
+  "repos": [
+    {
+      "name": "r2d2-trading-system",
+      "description": "US equity research, market data, charts, screeners, Strategy Lab and independent paper trading with an operator dashboard.",
+      "purpose": "Trading and investing research with the complete integrated dashboard/runtime layout.",
+      "kind": "integrated",
+      "sources": [
+        "telegram-bots",
+        "dashboard",
+        "trading-wiki"
+      ],
+      "features": [
+        "Market data and freshness checks",
+        "RS, momentum, sector and theme research",
+        "Calibrated uncertainty ranges",
+        "Deterministic Strategy Lab simulation and policy research",
+        "Independent paper books and dashboard"
+      ],
+      "run": "See SETUP.md; production paths and credentials must be configured before enabling services."
+    },
+    {
+      "name": "r2d2-agent-workflow",
+      "description": "Reusable multi-agent sessions, on-demand memory, token accounting, usage guards and project provenance.",
+      "purpose": "Operate independent model sessions and inspect their work, memory and resource use without the trading engine.",
+      "kind": "agent",
+      "features": [
+        "Independent provider sessions",
+        "Explicitly requested team review",
+        "Verbatim on-demand memory",
+        "Token trends and unusual-use alerts",
+        "Session provenance and secret redaction"
+      ],
+      "run": "python3 check.py; then python3 -m venv .venv and install requirements.txt; optional provider/Telegram authentication is separate."
+    },
+    {
+      "name": "r2d2-browser-research-tools",
+      "description": "Chrome/CDP browser automation, article extraction, transcripts, desktop fallbacks and local screen capture.",
+      "purpose": "Reusable browser and research helpers, separate from trading and agent memory.",
+      "kind": "browser",
+      "features": [
+        "Existing authenticated Chrome/CDP session",
+        "Static fetching and clean article extraction",
+        "Video transcript extraction",
+        "Desktop screenshot/input fallbacks",
+        "Local screen capture"
+      ],
+      "run": "python3 check.py; pip install -r requirements.txt; see README for helper commands and browser setup."
+    },
+    {
+      "name": "r2d2-knowledge-tools",
+      "description": "Deterministic document-to-skill extraction, markdown wiki management and Python code graph utilities.",
+      "purpose": "Build compact reusable knowledge from documents and inspect source relationships without a trading service.",
+      "kind": "knowledge",
+      "features": [
+        "PDF, text, HTML, EPUB and DOCX extraction",
+        "Per-chapter document output",
+        "Markdown wiki tools",
+        "Deterministic Python AST graph"
+      ],
+      "run": "python3 check.py; python3 book-to-skill/scripts/extract.py --check; python3 wiki/wiki.py --help."
+    },
+    {
+      "name": "r2d2-agent-skills",
+      "description": "Our installed and adapted agent skills, references and templates, with upstream attribution.",
+      "purpose": "Preserve the instruction/tool recipes shared by our coding and research agents.",
+      "kind": "skills",
+      "features": [
+        "Trading analysis recipes",
+        "Browser and debugging workflows",
+        "Document and diagram workflows",
+        "Design references",
+        "Upstream provenance and licenses"
+      ],
+      "run": "Read README; install selected skills into the agent skill directory. Skills require their named external tools."
+    },
+    {
+      "name": "r2d2-wifi-guard",
+      "description": "Linux Wi-Fi watchdog with a desktop status window, outage history and optional Telegram notifications.",
+      "purpose": "Keep a Linux workstation reachable using its existing NetworkManager saved connection.",
+      "kind": "wifi",
+      "features": [
+        "Reconnect saved Wi-Fi",
+        "Offline outage history",
+        "Desktop status/control window",
+        "Pause/resume controls",
+        "Optional queued Telegram notifications"
+      ],
+      "run": "See README; bash -n bin/wifi-guard; configure NetworkManager before installing the optional service."
+    },
+    {
+      "name": "r2d2-linux-system-tools",
+      "description": "Local backup, checkpoint, desktop setup, graphics setup and system-information utilities.",
+      "purpose": "Preserve the workstation maintenance scripts independently from application code.",
+      "kind": "linux",
+      "features": [
+        "Offline backup and restore guidance",
+        "Explicit local Git checkpoints",
+        "Desktop/graphics setup helpers",
+        "System hardware information"
+      ],
+      "run": "python3 check.py; read each script before running it. Backup outputs contain private state and must stay outside GitHub."
+    },
+    {
+      "name": "r2d2-chart-indicator-research",
+      "description": "Historical chart-indicator research, a Pine reconstruction and supporting chart crops.",
+      "purpose": "Preserve the standalone indicator study separately from active trading rules.",
+      "kind": "indicator",
+      "source": "chart-indicator-study",
+      "features": [
+        "Pine Script reconstruction",
+        "Written technical study",
+        "Historical research only",
+        "Account screenshots excluded for privacy"
+      ],
+      "run": "Read report.md; review/import the Pine source manually in TradingView. No claim of exact equivalence or profitability."
+    },
+    {
+      "name": "r2d2-productivity-connectors",
+      "description": "Small email and Google Tasks helpers with explicit authentication and no background sending.",
+      "purpose": "Keep personal productivity connectors independent of market analysis and agent orchestration.",
+      "kind": "productivity",
+      "features": [
+        "SMTP/IMAP helper source",
+        "Google Tasks API integration",
+        "Local Google OAuth setup helper",
+        "Credentials stay local"
+      ],
+      "run": "python3 check.py; read USAGE.md before configuring accounts. External sending or account writes require an explicit task."
+    },
+    {
+      "name": "r2d2-workspace-catalog",
+      "description": "Complete repository catalogue, source ownership map, export tools, verification records and manual update instructions.",
+      "purpose": "The starting point for finding, restoring and explicitly updating all saved work.",
+      "kind": "catalog",
+      "features": [
+        "Full repository list",
+        "Creation and verification report",
+        "Source manifests and omissions",
+        "Manual export/publish commands",
+        "External dependency inventory"
+      ],
+      "run": "python3 export.py --list; updates require an explicit --repo selection and publishing is a separate command."
+    }
+  ],
+  "deferred": [
+    "Game server tools",
+    "Sound studio",
+    "Wellness prototype",
+    "Business website and artwork"
+  ]
+}

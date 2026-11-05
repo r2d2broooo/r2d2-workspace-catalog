@@ -1,0 +1,14 @@
+{
+  "r2d2-trading-system": [],
+  "r2d2-agent-workflow": [],
+  "r2d2-browser-research-tools": [],
+  "r2d2-knowledge-tools": [],
+  "r2d2-agent-skills": [],
+  "r2d2-wifi-guard": [],
+  "r2d2-linux-system-tools": [
+    "desktop/paseo.desktop",
+    "desktop/claude-code-url-handler.desktop"
+  ],
+  "r2d2-chart-indicator-research": [],
+  "r2d2-productivity-connectors": []
+}

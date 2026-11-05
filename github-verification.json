@@ -1,0 +1,82 @@
+{
+  "r2d2-trading-system": {
+    "created_at": "2026-11-05T12:13:13Z",
+    "default_branch": "main",
+    "name": "r2d2-trading-system",
+    "private": true,
+    "url": "https://github.com/r2d2broooo/r2d2-trading-system",
+    "verified_commit": "d97a5337833b37ea1943c3ca2dcc98b8f28f4050"
+  },
+  "r2d2-agent-workflow": {
+    "created_at": "2026-11-05T12:13:19Z",
+    "default_branch": "main",
+    "name": "r2d2-agent-workflow",
+    "private": true,
+    "url": "https://github.com/r2d2broooo/r2d2-agent-workflow",
+    "verified_commit": "3a7cad134bdd4d710e3a0217bec4b7f707446a88"
+  },
+  "r2d2-browser-research-tools": {
+    "created_at": "2026-11-05T12:13:24Z",
+    "default_branch": "main",
+    "name": "r2d2-browser-research-tools",
+    "private": true,
+    "url": "https://github.com/r2d2broooo/r2d2-browser-research-tools",
+    "verified_commit": "ac97cba80b2de2976065183250a9c89dacbd3fd3"
+  },
+  "r2d2-knowledge-tools": {
+    "created_at": "2026-11-05T12:13:31Z",
+    "default_branch": "main",
+    "name": "r2d2-knowledge-tools",
+    "private": true,
+    "url": "https://github.com/r2d2broooo/r2d2-knowledge-tools",
+    "verified_commit": "4a382e591e2267091f0590716d55aaf67a805384"
+  },
+  "r2d2-agent-skills": {
+    "created_at": "2026-11-05T12:13:36Z",
+    "default_branch": "main",
+    "name": "r2d2-agent-skills",
+    "private": true,
+    "url": "https://github.com/r2d2broooo/r2d2-agent-skills",
+    "verified_commit": "801b1e8e4861433abf99627ebd796b0767001ead"
+  },
+  "r2d2-wifi-guard": {
+    "created_at": "2026-11-05T12:13:42Z",
+    "default_branch": "main",
+    "name": "r2d2-wifi-guard",
+    "private": true,
+    "url": "https://github.com/r2d2broooo/r2d2-wifi-guard",
+    "verified_commit": "fff3d6abaf0824e1f2f60c2fb69cbaeb46d7bd0e"
+  },
+  "r2d2-linux-system-tools": {
+    "created_at": "2026-11-05T12:13:47Z",
+    "default_branch": "main",
+    "name": "r2d2-linux-system-tools",
+    "private": true,
+    "url": "https://github.com/r2d2broooo/r2d2-linux-system-tools",
+    "verified_commit": "bcec2a194bb761ea6f0cb35b1e53bf470d20b91e"
+  },
+  "r2d2-chart-indicator-research": {
+    "created_at": "2026-11-05T12:13:52Z",
+    "default_branch": "main",
+    "name": "r2d2-chart-indicator-research",
+    "private": true,
+    "url": "https://github.com/r2d2broooo/r2d2-chart-indicator-research",
+    "verified_commit": "92b8e6c61e9dd3989053c741142db28d101f9bce"
+  },
+  "r2d2-productivity-connectors": {
+    "created_at": "2026-11-05T12:13:57Z",
+    "default_branch": "main",
+    "name": "r2d2-productivity-connectors",
+    "private": true,
+    "url": "https://github.com/r2d2broooo/r2d2-productivity-connectors",
+    "verified_commit": "6bd29892e23c98c738dc82cc6c674db25cef9e3c"
+  },
+  "r2d2-workspace-catalog": {
+    "created_at": "2026-11-05T12:14:03Z",
+    "default_branch": "main",
+    "name": "r2d2-workspace-catalog",
+    "private": true,
+    "url": "https://github.com/r2d2broooo/r2d2-workspace-catalog",
+    "verified_commit": "verified against remote; self-reference omitted"
+  }
+}
