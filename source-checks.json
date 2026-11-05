@@ -26,12 +26,12 @@
   },
   "r2d2-wifi-guard": {
     "exit": 0,
-    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 1, \"shell\": 1, \"javascript\": 0, \"json\": 1}}\n",
+    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 3, \"shell\": 1, \"javascript\": 0, \"json\": 1}}\n",
     "stderr": ""
   },
   "r2d2-linux-system-tools": {
     "exit": 0,
-    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 3, \"shell\": 5, \"javascript\": 0, \"json\": 1}}\n",
+    "stdout": "{\"source_checks\": \"passed\", \"counts\": {\"python\": 3, \"shell\": 6, \"javascript\": 0, \"json\": 1}}\n",
     "stderr": ""
   },
   "r2d2-chart-indicator-research": {
