@@ -40,3 +40,7 @@ for test coverage and its limits, and UPDATE_ON_DEMAND.md for future changes.
 No running application folder was moved or pointed at these exports. No automatic
 sync, publishing timer, Git hook or scheduled upload workflow was added. The
 original private state and four deferred project groups remain local.
+
+## Public release — 5 November 2026
+
+A later explicit operator request authorized public visibility and expanded documentation for the same ten groups. The public release has a separate text/history/metadata review, described in PUBLIC_RELEASE.md. The trading repository was recreated from its clean release history so superseded export objects are outside the public repository. Initial private-backup creation times in earlier records describe the earlier snapshot stage, not a public-release approval.

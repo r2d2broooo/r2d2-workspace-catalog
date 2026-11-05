@@ -1,56 +1,48 @@
-# R2D2 workspace catalogue
+# R2D2 Workspace Catalogue
 
-Start here to find the source repositories, their purpose, setup instructions and
-manual update process. The full list is [REPOSITORIES.md](REPOSITORIES.md).
+The starting point for the public R2D2 source repositories: what each one does, how the parts relate, how they were prepared and how to update them deliberately. This repository contains documentation and maintenance scripts, not a second copy of every application or a store of private runtime data.
 
-## What was saved
+See [REPOSITORIES.md](REPOSITORIES.md) for the complete linked list and [PUBLIC_RELEASE.md](PUBLIC_RELEASE.md) for release checks and visibility verification.
 
-Ten grouped source repositories: trading/investing, agent workflow and memory,
-browser research, knowledge tools, agent skills, Wi-Fi, Linux maintenance,
-indicator research, productivity connectors, and this catalogue. Each has a simple
-README, source manifest and read-only checks. Unfinished game, sound, wellness and
-business-web projects were explicitly deferred and are not uploaded.
+## Repository groups
 
-## Boundaries
+| Group | Role |
+|---|---|
+| Trading system | Integrated market-data, dashboard, research, Strategy Lab and paper runtime |
+| Agent workflow | Independent sessions, requested team discussion, memory, usage and provenance |
+| Browser research | CDP automation, static extraction, captions and capture helpers |
+| Knowledge tools | Document extraction, Markdown wiki bookkeeping and Python source graph |
+| Agent skills | Locally used recipes, references and examples with mixed upstream provenance |
+| Wi-Fi guard | NetworkManager watchdog and optional local interface/notifications |
+| Linux system tools | Backup/checkpoint, workstation setup, inspection and launcher helpers |
+| Indicator research | Standalone Pine prototype and technical study |
+| Productivity connectors | Explicit SMTP and Google Tasks account actions |
+| This catalogue | Source mapping, documentation, checks and manual release/update tools |
 
-The trading dashboard and bot runtime stay together because they are one integrated
-application. Agent, browser and knowledge repos expose independently usable helpers.
-Trading keeps integration copies of shared helpers to make its snapshot complete;
-SOURCE_MANIFEST.json maps those copies back to their source. Use separate Python
-environments. Optional external providers, accounts, hardware, browsers and data
-feeds still require configuration; passing offline tests does not authenticate them.
+Four unfinished project categories were excluded at the operator's request. Their application folders are not part of this release.
 
-The original local workspaces remain authoritative working copies. These repositories
-are sanitized exports, not renamed/moved live applications and not a full machine image.
-Generated market caches, private memory/chat, live paper books, account credentials,
-cookies, models, environments, game saves and proprietary binaries stay local.
-Private-history notes, account screenshots and rendered reports are excluded.
+## Architecture and source ownership
 
-## Privacy and future public release
+The trading dashboard and shared runtime are one integrated application, so their source stays together. Reusable helper repositories can be explored separately and document their own prerequisites. The trading integration retains compatible copies of some helpers; these are intentional integration snapshots, not automatically linked installations.
 
-Initial visibility is private. Sanitization removes literal IP addresses, personal
-contact details, chat identifiers and source-host paths; settings use configurable
-workspace paths and hostnames. Upstream license notices remain intact. Source and
-privacy checks are stored with the creation report. No original Git history is
-uploaded: each export starts with a clean sanitized history and generic commit identity.
-GitHub's account/repository URLs are intentional public identifiers, not credentials.
+`repos.json` records the groups. Each source repo's `SOURCE_MANIFEST.json` records source/export file hashes and sanitized provenance. The original local workspaces remain the development sources. No running application was moved or pointed at the public exports.
 
-Do not switch visibility automatically. Before any later public release, review the
-then-current staged diff and third-party licenses and rerun the privacy checks.
+## Manual updates
 
-## On-demand updates only
+`export.py` requires an explicit repository selection and does not contact GitHub. `sanitize.py`, `secret_scan.py` and `privacy_scan.py` prepare/check export copies. `publish.py` requires an explicit publishing flag, checks the selected target and verifies the remote commit. It never changes repository visibility as a side effect of a normal update.
 
-Nothing runs automatically. There are no sync timers, commit hooks, scheduled GitHub
-workflows or automatic pushes. See [UPDATE_ON_DEMAND.md](UPDATE_ON_DEMAND.md).
-The export command does not contact GitHub. Publishing requires a separate explicit
---publish flag and repo selection; it refuses public targets.
+There are no scheduled publishing jobs, automatic pushes or sync hooks. Read [UPDATE_ON_DEMAND.md](UPDATE_ON_DEMAND.md) before updating an export; changes to a shared helper may require updating both its toolkit and its trading integration copy.
 
-## Contents
+## Public release and privacy
 
-- repos.json: active groups and deferred categories.
-- REPOSITORIES.md: full linked list and purpose.
-- CREATION_REPORT.md: when/how each repo was created and what was verified.
-- SOURCE_MANIFEST.json in each source repo: file provenance and exported hashes.
-- export.py / sanitize.py: explicit source export and cleanup.
-- secret_scan.py / privacy_scan.py: checks that print locations, never private values.
-- publish.py: manual private creation/update and uploaded-commit verification.
+The public source omits credentials, browser sessions, private conversations/memory, personal contacts, configured network addresses, live books, investment notes, watchlists, captures, caches, model blobs and proprietary application binaries. The provided watchlist is empty and examples use hostnames or configurable paths. Existing upstream copyright/license notices are retained; the GitHub owner/repository URLs are intentional public identifiers.
+
+Release checks cover committed text/history, source metadata and selected offline behavior. They cannot authenticate your accounts or configure your hardware. Review any future diff and newly generated output before publishing an update.
+
+## Further reading
+
+- [CREATION_REPORT.md](CREATION_REPORT.md): initial grouping and backup preparation.
+- [VERIFICATION.md](VERIFICATION.md): exercised checks and their limits.
+- [DEPENDENCIES.md](DEPENDENCIES.md): software/services that remain external.
+- [PUBLIC_RELEASE.md](PUBLIC_RELEASE.md): public visibility and pre-release review.
+- [UPDATE_ON_DEMAND.md](UPDATE_ON_DEMAND.md): the explicit update process.

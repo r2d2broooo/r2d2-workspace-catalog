@@ -14,7 +14,7 @@
    privacy_scan.py. Inspect git diff. Source exports overwrite generated copies;
    do not keep unique development work only inside a generated export.
 6. Commit locally. Only when the operator also requests uploading/updating GitHub,
-   run `python3 publish.py --repo REPO_NAME --publish`. Without --publish it prints
+   run `python3 publish.py --repo REPO_NAME --publish --allow-public-update` for a public target. Without --publish it prints
    a plan and does nothing externally. Never change visibility as part of an update.
 7. Confirm local HEAD equals the remote main branch and update the creation/change
    report if scope or dependencies changed.

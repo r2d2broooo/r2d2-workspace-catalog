@@ -25,6 +25,8 @@ def scan(root):
   def hit(kind,at=0):
    findings.append({'path':str(p.relative_to(root)),'kind':kind,'line':text[:at].count('\n')+1})
   for m in IPV4.finditer(text):
+   # Browser/PDF generator version strings are software metadata, not addresses.
+   if re.search(r'(?:HeadlessChrome|Chrome|Chromium)/$',text[max(0,m.start()-30):m.start()]):continue
    try:ipaddress.ip_address(m.group())
    except ValueError:continue
    hit('literal-ip-address',m.start())

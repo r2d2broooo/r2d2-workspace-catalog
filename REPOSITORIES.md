@@ -1,6 +1,6 @@
 # Repository catalogue
 
-Created 5 November 2026. All initial uploads are private. The four unfinished project groups requested by the operator are deferred and not uploaded.
+Created 5 November 2026. Initially backed up privately; public release on 5 November 2026 follows a separate operator request and release review. The four unfinished project groups requested by the operator are deferred and not uploaded.
 
 | Repository | Purpose |
 |---|---|

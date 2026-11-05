@@ -1,0 +1,110 @@
+[
+  {
+    "repo": "r2d2-trading-system",
+    "check": {
+      "source_checks": "passed",
+      "counts": {
+        "python": 405,
+        "shell": 2,
+        "javascript": 9,
+        "json": 3
+      }
+    }
+  },
+  {
+    "repo": "r2d2-agent-workflow",
+    "check": {
+      "source_checks": "passed",
+      "counts": {
+        "python": 27,
+        "shell": 0,
+        "javascript": 0,
+        "json": 1
+      }
+    }
+  },
+  {
+    "repo": "r2d2-browser-research-tools",
+    "check": {
+      "source_checks": "passed",
+      "counts": {
+        "python": 9,
+        "shell": 0,
+        "javascript": 0,
+        "json": 1
+      }
+    }
+  },
+  {
+    "repo": "r2d2-knowledge-tools",
+    "check": {
+      "source_checks": "passed",
+      "counts": {
+        "python": 4,
+        "shell": 0,
+        "javascript": 0,
+        "json": 1
+      }
+    }
+  },
+  {
+    "repo": "r2d2-agent-skills",
+    "check": {
+      "source_checks": "passed",
+      "counts": {
+        "python": 10,
+        "shell": 1,
+        "javascript": 4,
+        "json": 1
+      }
+    }
+  },
+  {
+    "repo": "r2d2-wifi-guard",
+    "check": {
+      "source_checks": "passed",
+      "counts": {
+        "python": 3,
+        "shell": 1,
+        "javascript": 0,
+        "json": 1
+      }
+    }
+  },
+  {
+    "repo": "r2d2-linux-system-tools",
+    "check": {
+      "source_checks": "passed",
+      "counts": {
+        "python": 3,
+        "shell": 6,
+        "javascript": 0,
+        "json": 1
+      }
+    }
+  },
+  {
+    "repo": "r2d2-chart-indicator-research",
+    "check": {
+      "source_checks": "passed",
+      "counts": {
+        "python": 1,
+        "shell": 0,
+        "javascript": 0,
+        "json": 1
+      }
+    }
+  },
+  {
+    "repo": "r2d2-productivity-connectors",
+    "check": {
+      "source_checks": "passed",
+      "counts": {
+        "python": 4,
+        "shell": 0,
+        "javascript": 0,
+        "json": 1
+      }
+    }
+  }
+]

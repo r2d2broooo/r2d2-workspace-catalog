@@ -14,7 +14,7 @@ def command(args,cwd=None,capture=False):
  return subprocess.run(args,cwd=cwd,text=True,check=True,capture_output=capture)
 
 
-def publish(item):
+def publish(item, allow_public_update=False):
  root=HERE.parent/item['name']
  for scanner in ('secret_scan.py','privacy_scan.py'):
   command([sys.executable,str(HERE/scanner),str(root)])
@@ -30,8 +30,8 @@ def publish(item):
  if found.returncode:
   command(['gh','repo','create',full,'--private','--description',item['description'],
            '--source',str(root),'--remote','origin'])
- elif not json.loads(found.stdout)['isPrivate']:
-  raise RuntimeError('Refusing to update a public repository with this private-backup command')
+ elif not json.loads(found.stdout)['isPrivate'] and not allow_public_update:
+  raise RuntimeError('Public target: explicit --allow-public-update is required; visibility is never changed by this command')
  else:
   existing=subprocess.run(['git','remote','get-url','origin'],cwd=root,text=True,capture_output=True)
   if existing.returncode:command(['git','remote','add','origin','https://github.com/'+full+'.git'],cwd=root)
@@ -54,6 +54,7 @@ def main():
  parser=argparse.ArgumentParser(description=__doc__)
  parser.add_argument('--repo',action='append',required=True,choices=['all']+[r['name'] for r in CONFIG['repos']])
  parser.add_argument('--publish',action='store_true',help='Explicitly create/update GitHub repos and push commits now')
+ parser.add_argument('--allow-public-update',action='store_true',help='Explicitly permit an update to an existing public target; does not change visibility')
  args=parser.parse_args()
  selected=[r for r in CONFIG['repos'] if 'all' in args.repo or r['name'] in args.repo]
  if not args.publish:
@@ -61,6 +62,6 @@ def main():
   return
  account=command(['gh','api','user','--jq','.login'],capture=True).stdout.strip()
  if account!=CONFIG['owner']:raise RuntimeError('Authenticated account differs from catalogue owner')
- for item in selected:publish(item)
+ for item in selected:publish(item,args.allow_public_update)
 
 if __name__=='__main__':main()

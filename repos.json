@@ -1,12 +1,12 @@
 {
   "owner": "r2d2broooo",
-  "visibility": "private",
+  "visibility": "public",
   "created_date": "2026-11-05",
   "update_policy": "manual, on explicit operator request only",
   "repos": [
     {
       "name": "r2d2-trading-system",
-      "description": "US equity research, market data, charts, screeners, Strategy Lab and independent paper trading with an operator dashboard.",
+      "description": "Integrated US-equity research and paper-trading workspace: market data, screeners, relative strength, chart measurements, calibrated uncertainty ranges, independent agent books and a deterministic Strategy Lab with validation and forward trials.",
       "purpose": "Trading and investing research with the complete integrated dashboard/runtime layout.",
       "kind": "integrated",
       "sources": [
@@ -25,7 +25,7 @@
     },
     {
       "name": "r2d2-agent-workflow",
-      "description": "Reusable multi-agent sessions, on-demand memory, token accounting, usage guards and project provenance.",
+      "description": "Provider-independent project sessions and explicitly requested team discussion, with verbatim on-demand memory, token/cache accounting, usage guards, project trends and Git/instruction provenance. Reusable without the trading engine.",
       "purpose": "Operate independent model sessions and inspect their work, memory and resource use without the trading engine.",
       "kind": "agent",
       "features": [
@@ -39,7 +39,7 @@
     },
     {
       "name": "r2d2-browser-research-tools",
-      "description": "Chrome/CDP browser automation, article extraction, transcripts, desktop fallbacks and local screen capture.",
+      "description": "Python helpers for Chrome/CDP automation, static fetching, clean article extraction, video captions and local browser/desktop capture. Uses your own local browser setup; no profiles, cookies or accounts are included.",
       "purpose": "Reusable browser and research helpers, separate from trading and agent memory.",
       "kind": "browser",
       "features": [
@@ -53,7 +53,7 @@
     },
     {
       "name": "r2d2-knowledge-tools",
-      "description": "Deterministic document-to-skill extraction, markdown wiki management and Python code graph utilities.",
+      "description": "Deterministic document extraction and chapter preparation, Markdown wiki bookkeeping and Python AST code graphs. Standard-library-first helpers for compact, on-demand knowledge workflows without automatic model calls.",
       "purpose": "Build compact reusable knowledge from documents and inspect source relationships without a trading service.",
       "kind": "knowledge",
       "features": [
@@ -66,7 +66,7 @@
     },
     {
       "name": "r2d2-agent-skills",
-      "description": "Our installed and adapted agent skills, references and templates, with upstream attribution.",
+      "description": "Mixed-provenance agent recipes, supporting scripts and references for research, debugging, verification, browser work, knowledge and design. Includes local integrations and preserves available upstream attribution and licenses.",
       "purpose": "Preserve the instruction/tool recipes shared by our coding and research agents.",
       "kind": "skills",
       "features": [
@@ -80,7 +80,7 @@
     },
     {
       "name": "r2d2-wifi-guard",
-      "description": "Linux Wi-Fi watchdog with a desktop status window, outage history and optional Telegram notifications.",
+      "description": "Linux NetworkManager watchdog that reconnects a saved Wi-Fi connection, records outages and supports pause/resume controls. Includes an optional Gtk status window, queued Telegram notices and manually installed service examples.",
       "purpose": "Keep a Linux workstation reachable using its existing NetworkManager saved connection.",
       "kind": "wifi",
       "features": [
@@ -94,7 +94,7 @@
     },
     {
       "name": "r2d2-linux-system-tools",
-      "description": "Local backup, checkpoint, desktop setup, graphics setup and system-information utilities.",
+      "description": "Explicit-use Linux maintenance scripts for offline backups, local Git checkpoints, desktop/graphics setup, image montages, hardware inspection and launcher wrappers. Host configuration and private recovery archives stay local.",
       "purpose": "Preserve the workstation maintenance scripts independently from application code.",
       "kind": "linux",
       "features": [
@@ -107,7 +107,7 @@
     },
     {
       "name": "r2d2-chart-indicator-research",
-      "description": "Historical chart-indicator research, a Pine reconstruction and supporting chart crops.",
+      "description": "Explainable Pine Script research prototype for multi-colour candle states, with a technical study of momentum, trend, volatility and hysteresis. A behavioral approximation, not proprietary source, a verified clone or a profitability claim.",
       "purpose": "Preserve the standalone indicator study separately from active trading rules.",
       "kind": "indicator",
       "source": "chart-indicator-study",
@@ -121,11 +121,11 @@
     },
     {
       "name": "r2d2-productivity-connectors",
-      "description": "Small email and Google Tasks helpers with explicit authentication and no background sending.",
+      "description": "Small standard-library SMTP and Google Tasks helpers with explicit action APIs, OAuth setup and duplicate-aware note transfer. No background sending, stored credentials, inbox reader or automatic two-way sync.",
       "purpose": "Keep personal productivity connectors independent of market analysis and agent orchestration.",
       "kind": "productivity",
       "features": [
-        "SMTP/IMAP helper source",
+        "SSL SMTP outgoing email helper",
         "Google Tasks API integration",
         "Local Google OAuth setup helper",
         "Credentials stay local"
@@ -134,7 +134,7 @@
     },
     {
       "name": "r2d2-workspace-catalog",
-      "description": "Complete repository catalogue, source ownership map, export tools, verification records and manual update instructions.",
+      "description": "Public catalogue of the R2D2 source repositories, with detailed guides, source ownership maps, release/privacy verification and explicit export/update tools. No automatic synchronization or publishing jobs.",
       "purpose": "The starting point for finding, restoring and explicitly updating all saved work.",
       "kind": "catalog",
       "features": [
@@ -152,5 +152,6 @@
     "Sound studio",
     "Wellness prototype",
     "Business website and artwork"
-  ]
+  ],
+  "public_release_date": "2026-11-05"
 }

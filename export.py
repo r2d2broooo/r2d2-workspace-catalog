@@ -340,7 +340,8 @@ checkpoint.sh commits locally but does not push. None of these runs automaticall
     readme=f"# {repo['name']}\n\n{repo['description']}\n\n{repo['purpose']}\n\n## Features\n\n"+'\n'.join('- '+f for f in repo['features'])
     readme+='\n\n## Use\n\n'+repo['run']+'\n\nRun `python3 check.py` for read-only source checks. These checks are not a claim\nthat external accounts, market feeds, hardware or a deployed service are configured.\n'
     readme+='\n## Snapshot and updates\n\nCreated on 2026-11-05 from the local R2D2 workspaces. This is a private source\nsnapshot; the original local workspaces remain the working copies. The catalogue\nrepo records every source and omission. Updates happen only on explicit operator\nrequest; there is no automatic sync, push, hook or publishing timer.\n\nCredentials, private chats/memory, live paper books, game saves, models, caches,\nvirtual environments and proprietary application binaries are not included.\nUse a separate environment for this repo. Read USAGE.md/SETUP.md or the original\nREADME where present. Existing integrations are documented rather than silently\nstarting account actions.\n'
-    (dst/'README.md').write_text(readme)
+    template=HERE/'docs/repositories'/f"{repo['name']}.md"
+    (dst/'README.md').write_text(template.read_text() if template.exists() else readme)
     (dst/'.gitignore').write_text('''# Credentials and private runtime state
 .env
 .env.*

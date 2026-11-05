@@ -1,6 +1,6 @@
 # Repository backup and publishing contract
 
-- These repositories are private source snapshots. Live workspaces stay in place.
+- These repositories are sanitized source exports. Visibility changes require an explicit operator request. Live workspaces stay in place.
 - Updates and pushes happen only when the operator explicitly asks. No timer,
   Git hook, background sync, scheduled workflow or automatic push is installed.
 - Export the requested group, run its checks and the secret scan, inspect changes,
