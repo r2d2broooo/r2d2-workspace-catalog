@@ -1,0 +1,77 @@
+{
+  "checks": [
+    {
+      "repo": "r2d2-trading-system",
+      "passed": true,
+      "history_snapshots": 2,
+      "gitleaks_exit": 0,
+      "findings": []
+    },
+    {
+      "repo": "r2d2-agent-workflow",
+      "passed": true,
+      "history_snapshots": 2,
+      "gitleaks_exit": 0,
+      "findings": []
+    },
+    {
+      "repo": "r2d2-browser-research-tools",
+      "passed": true,
+      "history_snapshots": 3,
+      "gitleaks_exit": 0,
+      "findings": []
+    },
+    {
+      "repo": "r2d2-knowledge-tools",
+      "passed": true,
+      "history_snapshots": 2,
+      "gitleaks_exit": 0,
+      "findings": []
+    },
+    {
+      "repo": "r2d2-agent-skills",
+      "passed": true,
+      "history_snapshots": 2,
+      "gitleaks_exit": 0,
+      "findings": []
+    },
+    {
+      "repo": "r2d2-wifi-guard",
+      "passed": true,
+      "history_snapshots": 2,
+      "gitleaks_exit": 0,
+      "findings": []
+    },
+    {
+      "repo": "r2d2-linux-system-tools",
+      "passed": true,
+      "history_snapshots": 3,
+      "gitleaks_exit": 0,
+      "findings": []
+    },
+    {
+      "repo": "r2d2-chart-indicator-research",
+      "passed": true,
+      "history_snapshots": 2,
+      "gitleaks_exit": 0,
+      "findings": []
+    },
+    {
+      "repo": "r2d2-productivity-connectors",
+      "passed": true,
+      "history_snapshots": 2,
+      "gitleaks_exit": 0,
+      "findings": []
+    },
+    {
+      "repo": "r2d2-workspace-catalog",
+      "passed": true,
+      "history_snapshots": 3,
+      "gitleaks_exit": 0,
+      "findings": []
+    }
+  ],
+  "checked_at": "2026-11-05T13:02:20.291178+00:00",
+  "scope": "Current exports, all reachable history snapshots, Gitleaks, extracted PDF text/metadata and PNG text/EXIF metadata. No matched private values are stored.",
+  "all_passed": true
+}
