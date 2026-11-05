@@ -1,0 +1,2 @@
+# Optional public-release metadata review; source export scripts otherwise use stdlib.
+Pillow

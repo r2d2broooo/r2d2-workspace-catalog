@@ -15,3 +15,10 @@ Serena, Context7, REA, Graphify, hosted model services, Sites and other installe
 plugins are upstream dependencies, not separately authored tools in this archive.
 The agent-skills repo preserves relevant recipes and available upstream notices.
 Review every individual license before redistributing third-party material publicly.
+
+## Optional release verification
+
+release_review.py needs Pillow plus the pdftotext/pdfinfo tools from Poppler for
+document metadata/content checks. Pass the path to a separately installed Gitleaks
+executable to include its Git-history secret scan. These tools perform no model
+calls and do not change repository visibility. Tests in tests/ use Python unittest.
